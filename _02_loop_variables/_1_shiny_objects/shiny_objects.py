@@ -25,3 +25,10 @@ if __name__ == '__main__':
     window = Tk()
     window.withdraw()
     many_shiny_objects()
+
+    msg1 = simpledialog.askstring(title='?',prompt="how menny shiny things do you want)")
+
+    msg1=int(msg1)
+
+    for i in range((msg1)):
+        playsound('shiny-objects.wav')
