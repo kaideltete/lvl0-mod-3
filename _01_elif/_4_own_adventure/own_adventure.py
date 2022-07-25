@@ -43,18 +43,19 @@ if __name__ == '__main__':
         if (msg1 == "go home" or msg1 == "go home."):
             messagebox.showinfo(message="you go home.")
         if (msg1 == "left" or msg1 == "left."):
-            do_you = simpledialog.askstring(title='quest', prompt="there is a cliff do you go back or jump, yes or no?")
+            msg3 = simpledialog.askstring(title='quest', prompt="there is a cliff do you go back or jump, yes or no?")
 
-        if (msg1 == "yes" or msg1 == "yes."):
-            messagebox.showinfo(message="you die.")
-        if (msg1 == "no" or msg1 == "no."):
-            messagebox.showinfo(message="you go home.")
+            if (msg3 == "yes" or msg3 == "yes."):
+                messagebox.showinfo(message="you die.")
+            if (msg3 == "no" or msg3 == "no."):
+                messagebox.showinfo(message="you go home.")
 
         if (msg1 == "right" or msg1 == "right."):
+            print("inside")
             msg2 = simpledialog.askstring(title='quest',prompt="there is a bear, do you fight it, yes or no?")
-        if (msg2 == "yes" or msg2 == "yes."):
-            messagebox.showinfo(message="you die.")
-        if (msg2 == "no" or msg2 == "no."):
-            messagebox.showinfo(message="you go home.")
+            if (msg2 == "yes" or msg2 == "yes."):
+                messagebox.showinfo(message="you die.")
+            if (msg2 == "no" or msg2 == "no."):
+                messagebox.showinfo(message="you go home.")
 
 pass
