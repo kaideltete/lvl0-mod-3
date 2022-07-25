@@ -9,7 +9,7 @@ if __name__ == '__main__':
     # TODO 1) Set the X position of the turtle so that it starts on the left.
     my_turtle.penup()
     my_turtle.goto (x=-300, y=0)
-
+    my_turtle.width(10)
     # TODO 2) Make the turtle draw a star shape. Hint: angle=144.
     for i in range(5):
         my_turtle.pendown()
